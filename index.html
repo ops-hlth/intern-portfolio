@@ -12,6 +12,7 @@
     </head>
     <body>
         <header>
+            <h1>Georgina Focia's Portfolio Website</h1>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -21,6 +22,7 @@
                     <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">Contact Information</a></li>
                 </ul>
             </nav>
 
@@ -99,8 +101,18 @@
             <p class="section__subtitle section__subtitle--about"></p>
 
             <div class="about-me__body">
-                <p></p>
-                <p></p>
+                <p> Throughout my whole life, I have always had others tell me that I am the most hardworking person
+                    that they know. This has come from my fellow Computer Science friends at University, Professors, Teachers, 
+                    and all of my friends and family. My work ethic is the thing that I love the most about myself, it has done such 
+                    amazing wonders in my life. From high school to now, my work ethic is the reason for all of my success, and that will
+                    never change. If I put my mind to something, I can one hundred percent do it. Even more so with things that I am 
+                    passionate about, such as Computer Science! I recently discovered that I have a true passion for teaching Computer
+                    Science, and I hope to do this for the rest of my life as I want to become a professor! 
+                </p>
+
+                <p> Besides Computer Science, my other hobbies include drawing, watercolor painting, playing the guitar, 
+                    crocheting, fashion, and interior design! 
+                </p>
             </div>
 
             <img src="images/img2.JPG" alt="Georgie at an art museum" width="400" height="500">
@@ -108,20 +120,42 @@
 
         <!-- My Projects -->
         <section class="my projects" id="projects">
-            <h2 class="section__title">My projects</h2>
+            <h2 class="section__title">My Projects</h2>
             <p class="section__subtitle"></p>
 
             <div class="portfolio">
 
                 <!-- Portfolio Item 1 -->
+                <p> In Python, I coded a Connect Four game that has an AI player that the user can play against. The
+                    main components that this program took advantage of are object oriented programming and
+                    recursive backtracking to allow the AI player to have a "look ahead" and be able to know 
+                    what potential moves the human player will make before the human player actually makes them.
+                </p>
                 <a href="#" class="portfolio item">
                     <img src="images/portfolio01.JPG" alt="" class="portfolio__img"> <!-- Connect Four -->
                 </a>
                 <!-- Portfolio Item 2 -->
+                <p> In Java, I coded a Letter Box solver that takes advantage of recursive backtracking to solve the 
+                    New York Times Letter Box game. This is how LetterBoxed works: Letter Boxed takes place around, well, a box. 
+                    There are three letters on each side, and players must connect them to make words at least three letters long. 
+                    Letters on the same side cannot be used consecutively, and the final letter of each word becomes the first 
+                    letter of the next word. In other words, it's pretty complicated and has a lot of rules. But, by using 
+                    recursive backtracking, I was able to go through all combinations of letters that meet the requirements to be
+                    placed in a certain cell, continue forward if no rules of the game were broken, and move backwards and try a 
+                    differnt combination of a rule was broken until I found a combination that won the game. This was very interesting
+                    to code and gave me a much better understanding of recursion and recursive backtracking.
+                </p>
                 <a href="#" class="portfolio item">
                     <img src="images/portfolio02.png" alt="" class="portfolio__img"> <!-- Letter Boxed Solver -->
                 </a>
                 <!-- Portfolio Item 3 -->
+                <p> In Assembly Language, I coded a "calculator" that was able to preform all of the functions that a basic 
+                    four-function calculator can do. In addition, it was able to turn a String that was passed in as a parameter
+                    into all upper-case. This does not seem that hard, but all work was done through the registers of a CPU. This
+                    was a very challenging project, but it gave me a very good understanding of how local and global variables 
+                    actually work in higher level languages such as Java and Python and how they all just get broken down into
+                    changing the values within registers and call instructions from memory to execute operations. 
+                </p>
                 <a href="#" class="portfolio item">
                     <img src="images/portfolio03.png" alt="" class="portfolio__img"> <!-- Assembly Calculator -->
                 </a>
@@ -129,11 +163,15 @@
         </section>
 
         <!-- Footer -->
-        <footer>
-            <a href="mailto:gfocia@bu.edu" class="footer__link">gfocia@bu.edu</a>
+        <footer id="footer">
+            <h2 class="section__title">How To Contact Me / My Linked-In!</h2>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link"
-                href="https://www.linkedin.com/in/georgina-focia-1701aa234/">Linked In</a></li>
+                href="mailto:gfocia@bu.edu">My Email</a>
+                </li>
+                <li class="social-list__item"><a class="social-list__link"
+                    href="https://www.linkedin.com/in/georgina-focia-1701aa234/">My Linked In</a>
+                </li>
             </ul>
         </footer>
 
