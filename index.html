@@ -37,9 +37,9 @@
             <h1 class="section__title section__title--intro">
                 Hello! I am <strong>Georgina Focia</strong>
             </h1>
-            <p class ="section__subtitle section__subtitle--intro">Computer Science student at Boston University</p>
+            <p class ="section__subtitle section__subtitle--intro">Comp Sci Student at Boston University</p>
             <!-- The picture of myself in the header-->
-            <img src="images/img1.JPG" alt="a picture of me for the header" width="400" height="500">
+            <img src="images/img1.JPG" alt="a picture of me for the header" class="intro__img">
         </section>
 
         <!-- My Skills -->
@@ -67,7 +67,7 @@
                     <h3>Java</h3>
                     <p> Java is my personal favorite, although that is biased because I am a TA for a Java course at my school. 
                         I was first introduced to the Java programming languauge in Spring 2022. I took a Java course that went 
-                        over the basis of Java, object oriented programming, recursive backtracking, sorting algorithms,
+                        over the basics of Java, object oriented programming, recursive backtracking, sorting algorithms,
                         algorithm time analysis, data structures, and computer memory. I fell in love with how interesting this 
                         course was. I excelled in the course, and the Professor then asked me to TA for it the following semester. 
                         I use Java essentially on a daily basis, and I am really thankful to be a TA for this course because it 
@@ -119,14 +119,13 @@
                 </p>
             </div>
 
-            <img src="images/img2.JPG" alt="Georgie at an art museum" width="400" height="500">
+            <img src="images/img2.JPG" alt="Georgie at an art museum" class="about-me__img" height="500">
         </section>
 
         <!-- My Projects -->
-        <section class="my projects" id="projects">
-            <h2 class="section__title">My Projects</h2>
-            <p class="section__subtitle"></p>
-
+        <section class="my-projects" id="projects">
+            <h2 class="section__title section__title--work">My Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A Selection Of My Range of Work (Click On The Images To See My Work!)</p>
             <div class="portfolio">
 
                 <!-- Portfolio Item 1 -->
@@ -135,8 +134,12 @@
                     recursive backtracking to allow the AI player to have a "look ahead" and be able to know 
                     what potential moves the human player will make before the human player actually makes them.
                 </p>
-                <a href="#" class="portfolio item">
-                    <img src="images/portfolio01.JPG" alt="" class="portfolio__img"> <!-- Connect Four -->
+                <a href="#" class="portfolio__item">
+                    
+                    <a href="connectFour" target="_blank">
+                        <center><img src="images/portfolio01.JPG" alt="" class="portfolio__img"></center> <!-- Connect Four -->
+                    </a>
+
                 </a>
                 <!-- Portfolio Item 2 -->
                 <p> In Java, I coded a Letter Box solver that takes advantage of recursive backtracking to solve the 
@@ -149,8 +152,11 @@
                     differnt combination of a rule was broken until I found a combination that won the game. This was very interesting
                     to code and gave me a much better understanding of recursion and recursive backtracking.
                 </p>
-                <a href="#" class="portfolio item">
-                    <img src="images/portfolio02.png" alt="" class="portfolio__img"> <!-- Letter Boxed Solver -->
+                <a href="#" class="portfolio__item">
+
+                    <a href="LetterBox" target="_blank">
+                        <center><img src="images/portfolio02.png" alt="" class="portfolio__img"></center> <!-- Letter Boxed Solver -->
+                    </a>
                 </a>
                 <!-- Portfolio Item 3 -->
                 <p> In Assembly Language, I coded a "calculator" that was able to preform all of the functions that a basic 
@@ -160,26 +166,31 @@
                     actually work in higher level languages such as Java and Python and how they all just get broken down into
                     changing the values within registers and call instructions from memory to execute operations. 
                 </p>
-                <a href="#" class="portfolio item">
-                    <img src="images/portfolio03.png" alt="" class="portfolio__img"> <!-- Assembly Calculator -->
+                <a href="#" class="portfolio__item">
+
+                    <a href="https://github.com/appavooteaching/ps4b-gfocia" target="_blank">
+                        <center><img src="images/portfolio03.png" alt="" class="portfolio__img"></center> <!-- Assembly Calculator -->
+                    </a>
                 </a>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer id="footer">
-            <h2 class="section__title">How To Contact Me / My Linked-In!</h2>
+        <footer class="footer" id="footer">
+            <script src="https://kit.fontawesome.com/f897104095.js" crossorigin="anonymous"></script>
+            <h2 class="section__title">Contact Information</h2>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link"
-                href="mailto:gfocia@bu.edu">My Email</a>
+                href="mailto:gfocia@bu.edu">gfocia@bu.edu</a>
                 </li>
                 <li class="social-list__item"><a class="social-list__link"
-                    href="https://www.linkedin.com/in/georgina-focia-1701aa234/">My Linked In</a>
+                    href="https://www.linkedin.com/in/georgina-focia-1701aa234/"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
             </ul>
         </footer>
 
 
+        <script src="js/index.js"></script>
 
     </body>
 </html>
